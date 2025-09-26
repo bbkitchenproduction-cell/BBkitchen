@@ -1,0 +1,87 @@
+:root{
+  --primary: #FF7F50;    /* اللون الأساسي */
+  --secondary: #2E2E2E;  /* اللون الثانوي */
+  --accent: #FFD700;     /* لون الزر */
+  --background: #FFF8F0; /* خلفية */
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--secondary);
+}
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 16px;
+  background:var(--primary);
+  color:#fff;
+  position:relative;
+}
+.logo{font-weight:700;font-size:1.2rem}
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:1.6rem;
+}
+.nav-links{
+  display:flex;
+  gap:18px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.nav-links li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+.hero h1{font-size:2rem;margin:0 0 10px}
+.hero p{margin:0 0 18px}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--secondary);
+  padding:10px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* Footer */
+.site-footer{
+  text-align:center;
+  padding:18px 10px;
+  font-size:0.9rem;
+}
+
+/* Mobile */
+@media (max-width:768px){
+  .menu-toggle{display:block}
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:56px;
+    right:0;
+    width:100%;
+    background:var(--primary);
+    padding:8px 0;
+  }
+  .nav-links.active{display:flex}
+  .nav-links li{padding:8px 16px}
+  .hero{padding:40px 16px}
+}
