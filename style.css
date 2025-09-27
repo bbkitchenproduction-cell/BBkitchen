@@ -43,7 +43,7 @@ nav a:hover {
 .hero {
   background:
     linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
-    url('images/butter-blaster-banner.jpg');
+    url('C:\Users\Public\Images\butter-blaster-banner.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -59,3 +59,4 @@ nav a:hover {
 .hero-inner {
   max-width: 900px;
   margin: 0 auto;
+
