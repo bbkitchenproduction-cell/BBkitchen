@@ -1,13 +1,67 @@
-function toggleMenu(){
-  const nav = document.querySelector('.nav-links');
-  nav.classList.toggle('active');
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Story of Butter Blaster - BB Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="rights.html">Rights</a>
+      <a href="script.html">Story</a>
+    </nav>
+  </header>
 
-/* نغلق المينيو لما نضغط على أي لينك داخل القائمة */
-document.addEventListener('click', function(e){
-  const nav = document.querySelector('.nav-links');
-  if (!e.target.closest('.navbar')) return; // لو الضغط برا النافبار: نعمل ничего
-  if (e.target.matches('.nav-links a')) {
-    nav.classList.remove('active');
-  }
-});
+  <!-- Story Section -->
+  <main style="padding:40px; max-width:900px; margin:auto; line-height:1.8">
+    <h2 style="text-align:center; margin-bottom:20px;">🧈 The Legend of Butter Blaster</h2>
+
+    <p>
+      In a quiet kitchen, hidden from the chaos of the world, a new kind of hero was born. 
+      Not forged by science, nor crafted by fate — but by the sizzling love of food and the golden power of butter.
+    </p>
+
+    <h3>✨ Origins</h3>
+    <p>
+      Mohamed Osama, a dreamer with a passion for food, imagined a world where cooking wasn’t just about recipes.  
+      It was about <strong>magic, flavor, and power</strong>. From this vision, <strong>Butter Blaster</strong> emerged:  
+      a chef with the heart of a foodie, the strength of a superhero, and the unstoppable love for butter.
+    </p>
+
+    <h3>⚡ Powers</h3>
+    <ul style="margin-left:20px; margin-bottom:20px;">
+      <li>Glowing butter-yellow eyes that shine with energy.</li>
+      <li>A magical aura of butter flowing from his hands.</li>
+      <li>The legendary <strong>Butter Sword</strong>, a blade made from pure radiant butter energy.</li>
+      <li>The indestructible <strong>Steel Frying Pan</strong>, strapped to his back as his symbol.</li>
+      <li>A spice belt carrying the secrets of flavor and power.</li>
+    </ul>
+
+    <h3>🔥 Mission</h3>
+    <p>
+      Butter Blaster is more than a hero — he’s a protector of flavor, defender of creativity, 
+      and the sworn enemy of bland, soulless food.  
+      Wherever there’s a kitchen in need, he rises with sizzling energy, ready to battle the villains of taste.
+    </p>
+
+    <h3>📖 The Ongoing Story</h3>
+    <p>
+      Each recipe, each adventure, and each battle adds another chapter to Butter Blaster’s saga.  
+      BB Kitchen is not just his base — it’s the gateway to a universe where food is epic,  
+      and butter is the spark of greatness.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 BBKitchenProduction. All Rights Reserved.
+  </footer>
+</body>
+</html>
