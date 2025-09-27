@@ -37,17 +37,13 @@ body{
 /* Hero */
 .hero{
   /* background image + overlay */
+ .hero{
   background:
     linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
-    url('butter-blaster-banner.jpg');
-  background-size:cover;
-  background-position:center;
-  padding:80px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:56vh;
-  color:var(--text);
+    url('images/butter-blaster-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  ...
 }
 .hero-inner{max-width:900px;text-align:center;padding:24px}
 .hero h1{font-size:2.4rem;color:var(--primary);margin-bottom:12px;line-height:1.05}
@@ -92,6 +88,7 @@ section p{max-width:860px;margin:0 auto;color:rgba(244,244,244,0.92);font-size:1
   .hero h1{font-size:1.6rem}
   .hero p{font-size:.98rem}
 }
+
 
 
 
