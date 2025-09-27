@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact - BBKitchen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact - BB Kitchen</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">BBKitchen</div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Header & Navbar -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="rights.html">Rights</a>
+    </nav>
+  </header>
 
-  <main style="padding:20px">
-    <h2>📞 Contact Us</h2>
-    <p>Email: bbkitchenproduction@gmail.com</p>
+  <!-- Content -->
+  <main style="padding:20px; text-align:center">
+    <h2>📩 Contact Us</h2>
+    <p style="margin-bottom:20px">Got a recipe idea or just want to say hi? Reach out below:</p>
+
+    <form style="max-width:500px; margin:auto; text-align:left">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" style="width:100%; padding:10px; margin-bottom:15px"><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" style="width:100%; padding:10px; margin-bottom:15px"><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" style="width:100%; padding:10px; margin-bottom:15px"></textarea><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </main>
 </body>
 </html>
