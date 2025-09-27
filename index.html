@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BBKitchen</title>
   <title>BB Kitchen | Home of Butter Blaster</title>
 
   <!-- meta description -->
@@ -12,10 +13,21 @@
   <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='100%' height='100%' fill='%23FFD447'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='36' font-family='Segoe UI, Arial' fill='%231E2A38' font-weight='700'>B</text></svg>">
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo">BBKitchen</div>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="rights.html">Rights</a></li>
+    </ul>
+  </nav>
   <header>
     <nav class="navbar">
       <div class="logo">BBKitchen 🧈</div>
@@ -31,6 +43,9 @@
   </header>
 
   <section class="hero">
+    <h1>Welcome to BBKitchen</h1>
+    <p>Fresh. Tasty. Delivered to your door.</p>
+    <a href="menu.html" class="btn">Explore Menu</a>
     <div class="hero-inner">
       <h1>Welcome to BB Kitchen</h1>
       <p>Where bold recipes meet Butter Blaster energy — discover wild kitchen adventures and unique flavors.</p>
@@ -49,6 +64,7 @@
   </section>
 
   <footer class="site-footer">
+    <p>© BBKitchen</p>
     © 2025 BBKitchenProduction. All Rights Reserved.
   </footer>
 </body>
