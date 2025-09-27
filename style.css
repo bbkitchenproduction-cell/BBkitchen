@@ -43,7 +43,7 @@ nav a:hover {
 .hero {
   background:
     linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
-    url('Users\Public\Images\Image_fx (8)');
+    url('banner.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -53,12 +53,13 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 60px 20px;
-  color: var(--text);
+  color: #fff;
 }
 
 .hero-inner {
   max-width: 900px;
   margin: 0 auto;
+
 
 
 
