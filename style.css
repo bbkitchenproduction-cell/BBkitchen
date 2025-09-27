@@ -53,7 +53,7 @@ body{
 .hero{
   text-align:center;
   padding:60px 20px;
-  background: url('/images/butter-blaster-banner.jpg');
+  background: url('"C:\Users\Public\Images\butter-blaster-banner.jpg.jpg"');
     linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
     url('/images/butter-blaster-banner.jpg');
   background-size: cover;
@@ -102,6 +102,7 @@ body{
   .nav-links li{padding:8px 16px}
   .hero{padding:40px 16px}
 }
+
 
 
 
