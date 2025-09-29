@@ -77,49 +77,43 @@ nav a:hover {
   color: #ccc;
 }
 
-/* Slider */
+/* Slider container */
 .slider {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
+  max-width: 400px;   /* العرض المسموح */
+  margin: auto;
+  position: relative;
+  overflow: hidden;
 }
 
+/* كل slide */
 .slide {
-  flex: 0 0 280px;
-  background: var(--bg);
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
   text-align: center;
-  scroll-snap-align: start;
+  display: none; /* يخليها مخفية في البداية */
 }
 
+/* الصور نفسها */
 .slide img {
-  width: 70%;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* صندوق الصورة */
-.slider .slide .img-box {
-  width: 140px;      
-  height: 100px;      
-  overflow: hidden;   
-  border-radius: 12px;
-  margin: 0 auto 1rem auto; 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+/* أزرار الشراء */
+.buy-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 15px;
+  background: #f4b400;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-/* الصورة نفسها */
-.slider .slide .img-box img {
-  width: 75%;
-  height: 75%;
-  object-fit: cover;  
-  display: block;
+.buy-btn:hover {
+  background: #d99800;
 }
-
 /* Buy Button with Butter Effect */
 .buy-btn {
   display: inline-block;
@@ -222,6 +216,7 @@ nav a:hover {
     height: auto;
   }
 }
+
 
 
 
