@@ -104,8 +104,8 @@ nav a:hover {
 
 /* صندوق الصورة */
 .slider .slide .img-box {
-  width: 280px;       
-  height: 200px;      
+  width: 140px;      
+  height: 100px;      
   overflow: hidden;   
   border-radius: 12px;
   margin: 0 auto 1rem auto; 
@@ -212,6 +212,7 @@ nav a:hover {
   background:rgba(255,255,255,0.06);
   font-weight:700;
 }
+
 
 
 
