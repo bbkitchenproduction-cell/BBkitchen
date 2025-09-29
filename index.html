@@ -1,87 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">  
-<head>  
-  <meta charset="utf-8">  
-  <meta name="viewport" content="width=device-width,initial-scale=1">  
-  <title>BB Kitchen | Home of Butter Blaster</title>  
-  <link rel="stylesheet" href="style.css">  
-</head>  
-<body>  
-  <!-- Header & Navbar -->  
-  <header>  
-    <nav>  
-      <a href="index.html">Home</a>  
-      <a href="menu.html">Menu</a>  
-      <a href="about.html">About</a>  
-      <a href="contact.html">Contact</a>  
-      <a href="rights.html">Rights</a>  
-      <a href="script.html">Story</a>  
-    </nav>  
-  </header>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB Kitchen | Home of Butter Blaster</title>
 
-  <!-- Hero Section -->  
-  <section class="hero">  
-    <div class="hero-inner">  
-      <h1>Welcome to BB Kitchen</h1>  
-      <p>Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>  
-      <a class="btn" href="menu.html">Explore Menu</a>  
-    </div>  
-  </section>  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- 🔥 Products Slider Section -->  
-  <section id="products">  
-    <h2>⚡ BBKitchen Gear Picks 🧈</h2>
-    <p>Butter Blaster mighty tools!</p>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <div class="slider">
-      <div class="slides-wrapper">
-        <div class="slide">
-          <img src="Blender.jpg" alt="Super Blender">
-          <h3>Super Blender 3000</h3>
-          <p>Butter Blaster Galactica Blender 🧈🔥</p>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background: var(--primary);">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">BBKitchen</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="script.html">Story</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center text-center">
+    <div>
+      <h1 class="display-3">Welcome to BB Kitchen</h1>
+      <p class="lead">Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>
+      <a href="menu.html" class="btn btn-lg btn-warning fw-bold">Explore Menu</a>
+    </div>
+  </header>
+
+  <!-- Products Slider -->
+  <section id="products" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">⚡ BBKitchen Gear Picks 🧈</h2>
+      <p class="text-light mb-5">Butter Blaster’s mighty tools!</p>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="card bg-dark text-light">
+              <img src="Blender.jpg" class="card-img-top" alt="Super Blender">
+              <div class="card-body">
+                <h5 class="card-title">Super Blender 3000</h5>
+                <p class="card-text">Butter Blaster Galactica Blender 🧈🔥</p>
+                <a href="#" class="btn btn-accent">Buy on Amazon</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card bg-dark text-light">
+              <img src="Air Fryer.jpg" class="card-img-top" alt="Air Fryer">
+              <div class="card-body">
+                <h5 class="card-title">Crispy Air Fryer</h5>
+                <p class="card-text">Super crunchy potatoes 🥔💨</p>
+                <a href="#" class="btn btn-accent">Buy on Amazon</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card bg-dark text-light">
+              <img src="Ironcast.jpg" class="card-img-top" alt="Iron Cast">
+              <div class="card-body">
+                <h5 class="card-title">Secret Weapon</h5>
+                <p class="card-text">Butter Blaster Secret Weapon ✨🍳</p>
+                <a href="#" class="btn btn-accent">Buy on Amazon</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="slide">
-          <img src="AirFryer.jpg" alt="Air Fryer">
-          <h3>Crispy Air Fryer</h3>
-          <p>It gives you super crunchy potatoes 🥔💨</p>
-        </div>
-        <div class="slide">
-          <img src="Ironcast.jpg" alt="Iron Cast Pan">
-          <h3>Secret Weapon</h3>
-          <p>Butter Blaster Secret Weapon ✨🍳</p>
-        </div>
+
+        <!-- Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
 
-  <!-- Example Section -->  
-  <section>  
-    <h3>🔥 The Legend of Butter Blaster</h3>  
-    <p>  
-      From a simple kitchen to a superhero universe, Butter Blaster combines food, fun, and fiery butter powers!   
-      Follow his story and taste his crazy recipes.  
-    </p>  
-  </section>  
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background: var(--secondary); color: var(--text);">
+    © 2025 BBKitchen Production. All Rights Reserved.
+  </footer>
 
-  <!-- Slider Script -->  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Init Swiper -->
   <script>
-    let slideIndex = 0;
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
-    function showSlides() {
-      const slidesWrapper = document.querySelector('.slides-wrapper');
-      const slides = document.querySelectorAll('.slide');
-      slideIndex++;
-      if (slideIndex >= slides.length) slideIndex = 0;
-
-      slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
-    }
-
-    setInterval(showSlides, 4000); // كل 4 ثواني يتغير
-  </script>  
-
-  <!-- Footer -->  
-  <footer>  
-    © 2025 BBKitchenProduction. All Rights Reserved.  
-  </footer>  
-</body>  
+</body>
 </html>
