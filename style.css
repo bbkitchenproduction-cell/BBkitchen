@@ -224,20 +224,6 @@ nav a:hover {
   }
 }
 
-<script>
-let slideIndex = 0;
-
-function showSlides() {
-  const slidesWrapper = document.querySelector('.slides-wrapper');
-  const slides = document.querySelectorAll('.slide');
-  slideIndex++;
-  if (slideIndex >= slides.length) slideIndex = 0;
-
-  slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
-}
-
-setInterval(showSlides, 4000); // كل 4 ثواني يتغير
-</script>
 
 
 
