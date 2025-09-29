@@ -138,6 +138,62 @@ nav a:hover {
   transform: translate(-50%, -150%) scale(1.5);
 }
 
+/* Price badge + meta area */
+.slide .meta {
+  display:flex;
+  gap:0.6rem;
+  align-items:center;
+  justify-content:center;
+  margin-top:0.8rem;
+}
+
+.slide .price {
+  background: rgba(0,0,0,0.35);
+  color: #FFD447;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* buy button style (keeps butter animation) */
+.buy-btn {
+  display:inline-block;
+  position:relative;
+  background: var(--accent);
+  color:#fff;
+  padding:0.6rem 1rem;
+  border-radius: 999px;
+  font-weight:700;
+  text-decoration:none;
+  overflow:hidden;
+}
+
+.buy-btn::after {
+  content: "🧈";
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%) scale(0);
+  opacity:0;
+  transition: all 0.45s ease;
+  font-size:1.4rem;
+}
+.buy-btn:active::after {
+  transform: translate(-50%,-160%) scale(1.4);
+  opacity:1;
+}
+.details-btn {
+  display:inline-block;
+  padding:0.5rem 0.9rem;
+  border-radius:8px;
+  text-decoration:none;
+  color:var(--text);
+  background:rgba(255,255,255,0.06);
+  font-weight:700;
+}
+
 
 
 
