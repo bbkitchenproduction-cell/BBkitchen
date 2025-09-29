@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Super Blender 3000",
+    "desc": "The ultimate blender for your crazy butter powers!",
+    "img": "images/blender.jpg",
+    "link": "https://www.amazon.com/dp/XXXXX"
+  },
+  {
+    "name": "Crispy Air Fryer",
+    "desc": "Super crunchy potatoes 🥔💨 straight from BBKitchen!",
+    "img": "images/airfryer.jpg",
+    "link": "https://www.amazon.com/dp/YYYYY"
+  },
+  {
+    "name": "Secret Weapon Pan",
+    "desc": "Forged in the fires of BBKitchen 🔥🍳",
+    "img": "images/ironcast.jpg",
+    "link": "https://www.amazon.com/dp/ZZZZZ"
+  }
+]
