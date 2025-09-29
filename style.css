@@ -79,23 +79,30 @@ nav a:hover {
 
 /* Slider container */
 .slider {
-  max-width: 400px;   /* العرض المسموح */
+  max-width: 500px;      /* عرض مناسب */
   margin: auto;
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Wrapper للصور */
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
 }
 
 /* كل slide */
 .slide {
+  min-width: 100%;
+  box-sizing: border-box;
   text-align: center;
-  display: none; /* يخليها مخفية في البداية */
 }
 
-/* الصور نفسها */
 .slide img {
   width: 100%;
-  max-height: 250px;
-  object-fit: cover;
+  height: 280px;          /* ارتفاع ثابت */
+  object-fit: cover;      /* يخلي الصور متظبطة */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -232,6 +239,7 @@ function showSlides() {
   setTimeout(showSlides, 4000); // يتغير كل 4 ثواني
 }
 </script>
+
 
 
 
