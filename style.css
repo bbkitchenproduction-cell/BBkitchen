@@ -226,20 +226,18 @@ nav a:hover {
 
 <script>
 let slideIndex = 0;
-showSlides();
 
 function showSlides() {
-  let slides = document.querySelectorAll(".slide");
-  slides.forEach(slide => slide.style.display = "none");
-
+  const slidesWrapper = document.querySelector('.slides-wrapper');
+  const slides = document.querySelectorAll('.slide');
   slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
+  if (slideIndex >= slides.length) slideIndex = 0;
 
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // يتغير كل 4 ثواني
+  slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
-</script>
 
+setInterval(showSlides, 4000); // كل 4 ثواني يتغير
+</script>
 
 
 
