@@ -102,6 +102,15 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+  /* ضبط مقاسات صور السلايدر */
+.slider .slide img {
+  width: 280px;       
+  height: 200px;      
+  object-fit: cover;  
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
 /* Buy Button with Butter Effect */
 .buy-btn {
   display: inline-block;
@@ -193,6 +202,7 @@ nav a:hover {
   background:rgba(255,255,255,0.06);
   font-weight:700;
 }
+
 
 
 
