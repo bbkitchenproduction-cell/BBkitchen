@@ -212,6 +212,18 @@ nav a:hover {
   font-weight:700;
 }
 
+  @media (max-width: 600px) {
+  .slider .slide .img-box {
+    width: 75%;   
+    height: auto;
+  }
+
+  .slider .slide .img-box img {
+    height: auto;
+  }
+}
+
+
 
 
 
