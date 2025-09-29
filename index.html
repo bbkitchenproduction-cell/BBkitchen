@@ -1,103 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BB Kitchen | Home of Butter Blaster</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Header & Navbar -->
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="rights.html">Rights</a>
-      <a href="script.html">Story</a>
-    </nav>
-  </header>
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width,initial-scale=1">  
+  <title>BB Kitchen | Home of Butter Blaster</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+  <!-- Header & Navbar -->  
+  <header>  
+    <nav>  
+      <a href="index.html">Home</a>  
+      <a href="menu.html">Menu</a>  
+      <a href="about.html">About</a>  
+      <a href="contact.html">Contact</a>  
+      <a href="rights.html">Rights</a>  
+      <a href="script.html">Story</a>  
+    </nav>  
+  </header>  
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Welcome to BB Kitchen</h1>
-      <p>Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>
-      <a class="btn" href="menu.html">Explore Menu</a>
-    </div>
-  </section>
+  <!-- Hero Section -->  
+  <section class="hero">  
+    <div class="hero-inner">  
+      <h1>Welcome to BB Kitchen</h1>  
+      <p>Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>  
+      <a class="btn" href="menu.html">Explore Menu</a>  
+    </div>  
+  </section>  
 
-  <!-- 🔥 Products Slider Section -->
-  <section id="products">
-    <h2>⚡ BBKitchen Gear Picks 🧈</h2>
-    <p>Butter Blaster mighty tools!</p>
-    <div class="slider">
-
-      <!-- Slide 1 -->
-      <div class="slide">
-        <div class="img-box">
-          <img src="Air Fryer.jpg">
-        </div>
-        <h3>Super Blender 3000</h3>
-        <p>Butter Blaster Galactica Blender 🧈🔥</p>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="slide">
-        <div class="img-box">
-          <img src="images/Airfryer.jpg" alt="Air Fryer">
-        </div>
-        <h3>Crispy Air Fryer</h3>
-        <p>It gives you super crunchy potatoes 🥔💨</p>
-        <a href="https://www.amazon.com/dp/B0C33CHG99?_encoding=UTF8&th=1&linkCode=ll1&tag=balsterkitche-20&linkId=da62d84a46c479cdcc3d23a4e342aa61&language=en_US&ref_=as_li_ss_tl" 
-           target="_blank" class="buy-btn">Buy on Amazon</a>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="slide">
-        <div class="img-box">
-          <img src="images/Ironcast.jpg" alt="Iron cast">
-        </div>
-        <h3>Secret Weapon</h3>
-        <p>Butter Blaster Secret Weapon ✨🍳</p>
-        <a href="#" target="_blank" class="buy-btn">Buy on Amazon</a>
-      </div>
-
-    </div>
-  </section>
-  
-  <!-- Example Section -->
-  <section>
-    <h3>🔥 The Legend of Butter Blaster</h3>
-    <p>
-      From a simple kitchen to a superhero universe, Butter Blaster combines food, fun, and fiery butter powers! 
-      Follow his story and taste his crazy recipes.
-    </p>
-  </section>
-
-  <!-- 🔹 Slider JavaScript -->
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let slides = document.querySelectorAll(".slide");
-      slides.forEach(slide => slide.style.display = "none");
+  <!-- 🔥 Products Slider Section -->  
+  <section id="products">  
+    <h2>⚡ BBKitchen Gear Picks 🧈</h2>  
+    <p>Butter Blaster mighty tools!</p>  
+    <div class="slider">  
       
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 4000); // كل 4 ثواني
-    }
-  </script>
+      <!-- Slide 1 -->  
+      <div class="slide">  
+        <div class="img-box">  
+          <img src="images/blender.jpg" alt="Super Blender">  
+        </div>  
+        <h3>Super Blender 3000</h3>  
+        <p>Butter Blaster Galactica Blender 🧈🔥</p>  
+        <a href="#" target="_blank" class="buy-btn">Buy on Amazon</a>  
+      </div>  
 
-  <!-- Footer -->
-  <footer>
-    © 2025 BBKitchenProduction. All Rights Reserved.
-  </footer>
-</body>
+      <!-- Slide 2 -->  
+      <div class="slide">  
+        <div class="img-box">  
+          <img src="images/airfryer.jpg" alt="Air Fryer">  
+        </div>  
+        <h3>Crispy Air Fryer</h3>  
+        <p>It gives you super crunchy potatoes 🥔💨</p>  
+        <a href="https://www.amazon.com/dp/B0C33CHG99?_encoding=UTF8&th=1&linkCode=ll1&tag=balsterkitche-20&linkId=da62d84a46c479cdcc3d23a4e342aa61&language=en_US&ref_=as_li_ss_tl"   
+           target="_blank" class="buy-btn">Buy on Amazon</a>  
+      </div>  
+
+      <!-- Slide 3 -->  
+      <div class="slide">  
+        <div class="img-box">  
+          <img src="images/ironcast.jpg" alt="Iron cast">  
+        </div>  
+        <h3>Secret Weapon</h3>  
+        <p>Butter Blaster Secret Weapon ✨🍳</p>  
+        <a href="#" target="_blank" class="buy-btn">Buy on Amazon</a>  
+      </div>  
+
+    </div>  
+  </section>  
+
+  <!-- Example Section -->  
+  <section>  
+    <h3>🔥 The Legend of Butter Blaster</h3>  
+    <p>  
+      From a simple kitchen to a superhero universe, Butter Blaster combines food, fun, and fiery butter powers!   
+      Follow his story and taste his crazy recipes.  
+    </p>  
+  </section>  
+
+  <!-- Slider Script -->  
+  <script>  
+  let slideIndex = 0;  
+  const slides = document.querySelectorAll(".slide");  
+  showSlides(slideIndex);  
+
+  function showSlides(n) {  
+    slides.forEach(slide => slide.style.display = "none");  
+    slides[n].style.display = "block";  
+  }  
+
+  function changeSlide(step) {  
+    slideIndex = (slideIndex + step + slides.length) % slides.length;  
+    showSlides(slideIndex);  
+  }  
+
+  // Auto change every 4s  
+  setInterval(() => changeSlide(1), 4000);  
+
+  // Swipe support (mobile)  
+  let startX = 0;  
+  let endX = 0;  
+
+  document.querySelector(".slider").addEventListener("touchstart", e => {  
+    startX = e.touches[0].clientX;  
+  });  
+
+  document.querySelector(".slider").addEventListener("touchend", e => {  
+    endX = e.changedTouches[0].clientX;  
+    if (startX - endX > 50) { changeSlide(1); }   // Swipe left  
+    if (endX - startX > 50) { changeSlide(-1); } // Swipe right  
+  });  
+  </script>  
+
+  <!-- Footer -->  
+  <footer>  
+    © 2025 BBKitchenProduction. All Rights Reserved.  
+  </footer>  
+</body>  
 </html>
-
-
