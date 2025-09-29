@@ -30,30 +30,29 @@
 
   <!-- 🔥 Products Slider Section -->  
   <section id="products">  
-  <section id="products">
-  <h2>⚡ BBKitchen Gear Picks 🧈</h2>
-  <p>Butter Blaster mighty tools!</p>
+    <h2>⚡ BBKitchen Gear Picks 🧈</h2>
+    <p>Butter Blaster mighty tools!</p>
 
-  <div class="slider">
     <div class="slider">
-  <div class="slides-wrapper">
-    <div class="slide">
-      <img src="Blender.jpg" alt="Super Blender">
-      <h3>Super Blender 3000</h3>
-      <p>Butter Blaster Galactica Blender 🧈🔥</p>
+      <div class="slides-wrapper">
+        <div class="slide">
+          <img src="Blender.jpg" alt="Super Blender">
+          <h3>Super Blender 3000</h3>
+          <p>Butter Blaster Galactica Blender 🧈🔥</p>
+        </div>
+        <div class="slide">
+          <img src="AirFryer.jpg" alt="Air Fryer">
+          <h3>Crispy Air Fryer</h3>
+          <p>It gives you super crunchy potatoes 🥔💨</p>
+        </div>
+        <div class="slide">
+          <img src="Ironcast.jpg" alt="Iron Cast Pan">
+          <h3>Secret Weapon</h3>
+          <p>Butter Blaster Secret Weapon ✨🍳</p>
+        </div>
+      </div>
     </div>
-    <div class="slide">
-      <img src="Air Fryer.jpg" alt="Air Fryer">
-      <h3>Crispy Air Fryer</h3>
-      <p>It gives you super crunchy potatoes 🥔💨</p>
-    </div>
-    <div class="slide">
-      <img src="Ironcast.jpg" alt="Iron Cast Pan">
-      <h3>Secret Weapon</h3>
-      <p>Butter Blaster Secret Weapon ✨🍳</p>
-    </div>
-  </div>
-    </div>
+  </section>
 
   <!-- Example Section -->  
   <section>  
@@ -65,37 +64,19 @@
   </section>  
 
   <!-- Slider Script -->  
-  <script>  
-  let slideIndex = 0;  
-  const slides = document.querySelectorAll(".slide");  
-  showSlides(slideIndex);  
+  <script>
+    let slideIndex = 0;
 
-  function showSlides(n) {  
-    slides.forEach(slide => slide.style.display = "none");  
-    slides[n].style.display = "block";  
-  }  
+    function showSlides() {
+      const slidesWrapper = document.querySelector('.slides-wrapper');
+      const slides = document.querySelectorAll('.slide');
+      slideIndex++;
+      if (slideIndex >= slides.length) slideIndex = 0;
 
-  function changeSlide(step) {  
-    slideIndex = (slideIndex + step + slides.length) % slides.length;  
-    showSlides(slideIndex);  
-  }  
+      slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
 
-  // Auto change every 4s  
-  setInterval(() => changeSlide(1), 4000);  
-
-  // Swipe support (mobile)  
-  let startX = 0;  
-  let endX = 0;  
-
-  document.querySelector(".slider").addEventListener("touchstart", e => {  
-    startX = e.touches[0].clientX;  
-  });  
-
-  document.querySelector(".slider").addEventListener("touchend", e => {  
-    endX = e.changedTouches[0].clientX;  
-    if (startX - endX > 50) { changeSlide(1); }   // Swipe left  
-    if (endX - startX > 50) { changeSlide(-1); } // Swipe right  
-  });  
+    setInterval(showSlides, 4000); // كل 4 ثواني يتغير
   </script>  
 
   <!-- Footer -->  
@@ -104,6 +85,3 @@
   </footer>  
 </body>  
 </html>
-
-
-
