@@ -29,8 +29,18 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold" href="menu.html">Menu</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold" href="BBTools.html">BBTools</a></li> 
+        
+        <!-- Dropdown Explore -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+            <li><a class="dropdown-item" href="BBTools.html">Products</a></li>
+            <li><a class="dropdown-item" href="menu.html">Menu</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item"><a class="nav-link fw-bold" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link fw-bold" href="contact.html">Contact</a></li>
         <li class="nav-item"><a class="nav-link fw-bold" href="script.html">Story</a></li>
@@ -38,16 +48,16 @@
     </div>
   </div>
 </nav>
-  
-  <!-- Hero Section -->
-  <header class="hero d-flex align-items-center justify-content-center text-center">
-    <div>
-      <h1 class="display-3">Welcome to BB Kitchen</h1>
-      <p class="lead">Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>
-      <a href="menu.html" class="btn btn-lg btn-warning fw-bold">Explore Menu</a>
-    </div>
-  </header>
 
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Welcome to BB Kitchen</h1>
+    <p>Where crazy recipes meet superhero vibes! Step into the world of Butter Blaster and discover epic kitchen adventures.</p>
+    <!-- زرار Explore يفتح على المنتجات -->
+    <a class="btn" href="BBTools.html">Explore Products</a>
+  </div>
+</section>
   <!-- Products Slider -->
   <section id="products" class="py-5 text-center">
     <div class="container">
@@ -133,6 +143,7 @@
 
 </body>
 </html>
+
 
 
 
