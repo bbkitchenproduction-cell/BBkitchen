@@ -62,73 +62,82 @@ nav a:hover {
 
 /* Products Section */
 #products {
-  padding: 60px 20px;
-  background-color: #fff9e6;
+  padding: 3rem 1rem;
+  background: #1E2A38;
   text-align: center;
 }
 
 #products h2 {
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-  color: #333;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
 #products p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+  color: #ccc;
 }
 
-/* Slider Styles */
+/* Slider */
 .slider {
-  position: relative;
-  max-width: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 2px solid #f5c518;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
 }
 
 .slide {
-  display: none;
-  padding: 20px;
-  background: #fff;
+  flex: 0 0 280px;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  text-align: center;
+  scroll-snap-align: start;
 }
 
 .slide img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-.slide h3 {
-  font-size: 1.2rem;
-  color: #222;
-}
-
-.slide p {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 10px 0;
-}
-
-/* Buy button */
+/* Buy Button with Butter Effect */
 .buy-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #f5c518;
-  color: #000;
+  position: relative;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
   font-weight: bold;
-  border-radius: 8px;
   text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .buy-btn:hover {
-  background: #ffdd44;
+  background: #ff6a1a;
+  transform: translateY(-3px);
 }
+
+/* Butter splash animation */
+.buy-btn::after {
+  content: "🧈";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.4s ease;
+}
+
+.buy-btn:active::after {
+  opacity: 1;
+  transform: translate(-50%, -150%) scale(1.5);
+}
+
 
 
 
