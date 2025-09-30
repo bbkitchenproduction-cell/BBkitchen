@@ -15,7 +15,7 @@
 }
 
 body {
-  body.bbtools-page .hero {
+  body.BBTools-page .hero {
   background: var(--primary);
   color: var(--secondary);
 }
@@ -169,6 +169,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 
 
 
