@@ -45,7 +45,7 @@ body.home-page .hero {
 }
 
 /* صفحة BBTools */
-body.bbtools-page .hero {
+body.BBTools-page .hero {
   background: var(--primary);  /* لون بس */
   color: var(--secondary);
   padding: 60px 20px;
@@ -194,6 +194,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 
 
 
