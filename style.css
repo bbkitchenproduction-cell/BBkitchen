@@ -160,34 +160,39 @@ body.BBTools-page .hero {
 /* Buy Button */
 .buy-btn {
   display: inline-block;
-  position: relative;
-  background: var(--accent);
-  color: #fff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 30px;
   font-weight: bold;
+  background: var(--accent);
+  color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
   overflow: hidden;
+  margin-top: 10px;
 }
+
 .buy-btn:hover {
   background: #ff6a1a;
-  transform: scale(1.05);
+  transform: translateY(-3px);
 }
+
 .buy-btn::after {
   content: "🧈";
   position: absolute;
-  top: 50%;
   left: 50%;
-  font-size: 1.5rem;
-  opacity: 0;
+  top: 50%;
   transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
   transition: all 0.4s ease;
+  font-size: 1.4rem;
 }
+
 .buy-btn:active::after {
+  transform: translate(-50%, -160%) scale(1.4);
   opacity: 1;
-  transform: translate(-50%, -150%) scale(1.5);
 }
+
 
 /* Footer */
 footer {
@@ -227,6 +232,7 @@ footer {
   background: var(--accent);
   color: #fff;
 }
+
 
 
 
