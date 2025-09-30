@@ -25,13 +25,37 @@ body {
 /* Navbar */
 .navbar {
   background: var(--primary);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar .nav-link {
-  color: var(--secondary) !important;
+
+.navbar .logo {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: var(--secondary);
   font-weight: bold;
+  transition: 0.3s;
 }
-.navbar .nav-link:hover {
-  color: #000 !important;
+
+.navbar .nav-links a:hover {
+  color: var(--accent);
 }
 
 /* Hero Section */
@@ -131,3 +155,4 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
