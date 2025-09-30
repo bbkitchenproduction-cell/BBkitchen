@@ -32,6 +32,9 @@ body.home-page .hero {
   background: 
     linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
     url('Banner.jpg');
+  ...
+}
+
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -194,6 +197,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 
 
 
