@@ -27,6 +27,31 @@ body {
   padding-top: 70px; /* علشان الهيدر fixed */
 }
 
+/* الصفحة الرئيسية */
+body.home-page .hero {
+  background: 
+    linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
+    url('Banner.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+/* صفحة BBTools */
+body.bbtools-page .hero {
+  background: var(--primary);  /* لون بس */
+  color: var(--secondary);
+  padding: 60px 20px;
+  text-align: center;
+}
+
 /* Navbar */
 .navbar {
   background: var(--primary);
@@ -169,6 +194,7 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 
 
 
