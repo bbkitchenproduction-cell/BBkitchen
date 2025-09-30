@@ -107,11 +107,19 @@ body {
   background: rgba(0,0,0,0.5);
   color: #fff;
   border: none;
+  padding: 10px 15px;
   font-size: 1.5rem;
-  padding: 0.5rem 0.8rem;
   cursor: pointer;
   border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 10;
 }
+
+.prev:hover, .next:hover {
+  background: rgba(255, 212, 71, 0.8); /* buttery yellow */
+  color: #000;
+}
+
 .prev { left: 10px; }
 .next { right: 10px; }
 
@@ -155,4 +163,5 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
 
